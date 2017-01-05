@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="800.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mysimulador.FXMLControllerFruto">
+   <children>
+      <TabPane layoutY="-6.0" prefHeight="700.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Fruto">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="800.0">
+                     <children>
+                        <Separator layoutX="169.0" orientation="VERTICAL" prefHeight="493.0" prefWidth="3.0" />
+                        <Label layoutX="14.0" layoutY="14.0" text="Fruto:">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfNomeFruto" layoutX="14.0" layoutY="45.0" prefHeight="31.0" prefWidth="137.0" />
+                        <TextField fx:id="tfCalorLat4" layoutX="648.0" layoutY="260.0" prefHeight="31.0" prefWidth="59.0" />
+                        <Label layoutX="616.0" layoutY="270.0" text="hfg4">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfCalorLat3" layoutX="647.0" layoutY="221.0" prefHeight="31.0" prefWidth="59.0" />
+                        <Label layoutX="615.0" layoutY="231.0" text="hfg3">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="514.0" layoutY="203.0" prefHeight="15.0" prefWidth="144.0" text="hfg - Calor Latente">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="514.0" layoutY="232.0" text="hfg1">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField id="tfCalorLat1" fx:id="tfCalorLat1" layoutX="541.0" layoutY="225.0" prefHeight="31.0" prefWidth="59.0" />
+                        <Label layoutX="515.0" layoutY="271.0" text="hfg2">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfCalorLat2" layoutX="542.0" layoutY="264.0" prefHeight="31.0" prefWidth="59.0" />
+                        <ScrollPane fx:id="sPanel" layoutX="182.0" layoutY="102.0" prefHeight="335.0" prefWidth="297.0" />
+                        <Label layoutX="346.0" layoutY="30.0" prefHeight="15.0" prefWidth="113.0" text="Coeficiente (B)">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="comboboxCoefB" layoutX="335.0" layoutY="58.0" prefHeight="31.0" prefWidth="135.0" promptText="Selecione " />
+                        <ComboBox fx:id="comboboxCoefA" layoutX="180.0" layoutY="59.0" prefHeight="31.0" prefWidth="135.0" promptText="Selecione " />
+                        <Label layoutX="191.0" layoutY="31.0" prefHeight="15.0" prefWidth="113.0" text="Coeficiente (A)">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="comboboxEqCamFina" layoutX="520.0" layoutY="131.0" prefHeight="31.0" prefWidth="134.0" promptText="Selecione" />
+                        <Label layoutX="508.0" layoutY="101.0" prefHeight="15.0" prefWidth="176.0" text="Eq. de Camada Fina/Modelo">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="508.0" layoutY="29.0" prefHeight="15.0" prefWidth="192.0" text="Umidade de Equil [XE]/Eq.Umid">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="comboboxEqUm" layoutX="520.0" layoutY="57.0" prefHeight="31.0" prefWidth="135.0" promptText="Selecione " />
+                        <TextField fx:id="tfCalorEs2" layoutX="45.0" layoutY="233.0" prefHeight="31.0" prefWidth="59.0" />
+                        <Label layoutX="16.0" layoutY="236.0" text="Cp2">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfRconversao" layoutX="46.0" layoutY="139.0" prefHeight="31.0" prefWidth="59.0" />
+                        <Label layoutX="15.0" layoutY="199.0" text="Cp1">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="173.0" text="Calor Específico">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="26.0" layoutY="95.0" text="Razão de Conversao">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="117.0" text="Massa Esp. do  Fruto (R1)">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfCalorEs1" layoutX="45.0" layoutY="193.0" prefHeight="31.0" prefWidth="59.0" />
+                        <Separator layoutX="-1.0" layoutY="171.0" prefHeight="4.0" prefWidth="168.0" />
+                        <TextField fx:id="tfXe1" layoutX="16.0" layoutY="361.0" prefHeight="31.0" prefWidth="59.0" />
+                        <TextField fx:id="tfXe2" layoutX="16.0" layoutY="409.0" prefHeight="31.0" prefWidth="59.0" />
+                        <TextField fx:id="tfXe4" layoutX="93.0" layoutY="409.0" prefHeight="31.0" prefWidth="59.0" />
+                        <TextField fx:id="tfXe3" layoutX="93.0" layoutY="361.0" prefHeight="31.0" prefWidth="59.0" />
+                        <TextField fx:id="tfXe5" layoutX="53.0" layoutY="457.0" prefHeight="31.0" prefWidth="59.0" />
+                        <Label layoutX="37.0" layoutY="288.0" prefHeight="24.0" prefWidth="113.0" text="Para a Equação de ">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="341.0" text="Xe1">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="111.0" layoutY="341.0" text="Xe3">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="393.0" text="Xe2">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="112.0" layoutY="393.0" text="Xe4">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="72.0" layoutY="443.0" text="Xe5">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="310.0" prefHeight="25.0" prefWidth="160.0" text="Teor de Áqua de Equilibrio">
+                           <font>
+                              <Font name="Times New Roman Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Condiçoes de Secagem">
+               <content>
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="800.0">
+                           <children>
+                              <Label layoutX="13.0" layoutY="28.0" prefHeight="18.0" prefWidth="232.0" text="Teor da Água (%) [X]:">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="277.0" prefHeight="18.0" prefWidth="234.0" text="Intervalo de Tempo (h):">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="242.0" prefHeight="18.0" prefWidth="234.0" text="Teor da Água Fin. do Fruto (%) [Xf]:">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="137.0" prefHeight="18.0" prefWidth="197.0" text="Temperatura de Secagem (°C) : ">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="15.0" layoutY="103.0" prefHeight="18.0" prefWidth="229.0" text="Pressão Atmosferica (mm Hg) Patm:">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="13.0" layoutY="66.0" prefHeight="18.0" prefWidth="232.0" text="Teor da Água Ini. do Fruto (%) [Xo]:">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="206.0" prefHeight="18.0" prefWidth="174.0" text="Umidade Relativa (%) : ">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="175.0" prefHeight="18.0" prefWidth="174.0" text="Temperatura do Fruto (°C) : ">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfUmidRelativa" layoutX="263.0" layoutY="200.0" prefHeight="31.0" prefWidth="60.0" />
+                              <TextField fx:id="tfTAguaFnl" layoutX="263.0" layoutY="236.0" prefHeight="31.0" prefWidth="60.0" />
+                              <TextField fx:id="tfIntTempo" layoutX="263.0" layoutY="271.0" prefHeight="31.0" prefWidth="60.0" />
+                              <TextField fx:id="tfTempeFruto" layoutX="263.0" layoutY="165.0" prefHeight="31.0" prefWidth="60.0" />
+                              <TextField fx:id="tfTempeSgm" layoutX="263.0" layoutY="131.0" prefHeight="31.0" prefWidth="60.0" />
+                              <TextField fx:id="tfPAtm" layoutX="263.0" layoutY="96.0" prefHeight="31.0" prefWidth="60.0" />
+                              <TextField fx:id="tfTAguaInl" layoutX="263.0" layoutY="60.0" prefHeight="31.0" prefWidth="60.0" />
+                              <TextField fx:id="tfTeorAgua" layoutX="263.0" layoutY="21.0" prefHeight="31.0" prefWidth="60.0" />
+                              <Label layoutX="365.0" layoutY="26.0" text="Quantidade de Camadas:">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="comboboxQuantCam" layoutX="521.0" layoutY="22.0" prefHeight="31.0" prefWidth="101.0" />
+                              <Label layoutX="365.0" layoutY="66.0" prefHeight="18.0" prefWidth="197.0" text="Vol. Específico do Ar  [m3/kg]: ">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfVolEspAr" layoutX="403.0" layoutY="95.0" prefHeight="31.0" prefWidth="93.0" />
+                              <TextField fx:id="tfFluxoArSgm" layoutX="262.0" layoutY="309.0" prefHeight="31.0" prefWidth="60.0" />
+                              <Label layoutX="12.0" layoutY="315.0" prefHeight="18.0" prefWidth="247.0" text="Fluxo do Ar de Secagem (m^3/mim/m^2)[Xe]:">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfAltCmdFruto" layoutX="263.0" layoutY="346.0" prefHeight="31.0" prefWidth="60.0" />
+                              <Label layoutX="13.0" layoutY="352.0" prefHeight="18.0" prefWidth="232.0" text="Altura da Camada do Fruto (m):">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="buttonSalvar" layoutX="668.0" layoutY="224.0" mnemonicParsing="false" onAction="#btSalvarAction" text="Salvar" />
+                              <Button fx:id="buttonSimular" layoutX="663.0" layoutY="279.0" mnemonicParsing="false" onAction="#btSimularAction" text="Simular" />
+                              <Button fx:id="buttonLimpar" layoutX="671.0" layoutY="332.0" mnemonicParsing="false" onAction="#btLimparAction" text="Clear" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
